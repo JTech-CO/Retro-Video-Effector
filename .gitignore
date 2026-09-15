@@ -1,0 +1,6 @@
+# RVE WORK DISK - KEEP RELEASE FILES CLEAN
+.DS_Store
+Thumbs.db
+__pycache__/
+node_modules/
+.test-output/
