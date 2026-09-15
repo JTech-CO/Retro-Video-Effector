@@ -6,7 +6,7 @@ Windows 95 스타일의 **로컬 정지 이미지 편집기**입니다. 바탕 �
 
 ![한국어 앱 화면](assets/app-desktop-kr.png)
 
-## 실행과 GitHub Pages 배포
+## [실행](<https://jtech-co.github.io/Retro-Video-Effector/>)과 GitHub Pages 배포
 
 ZIP 내용물을 저장소 루트에 올립니다. `index.html`과 `css/`, `js/`, `assets/`가 나란히 있어야 하며 빈 `.nojekyll`도 포함합니다. GitHub Pages의 게시 대상을 해당 루트로 지정합니다. 런타임 자원은 모두 상대 경로를 사용하므로 저장소 하위 경로에서도 같은 구성을 유지합니다.
 
