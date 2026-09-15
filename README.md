@@ -6,7 +6,7 @@ An app-only, Windows 95-style **still-image editor**. The editor fills the page:
 
 ![English application](assets/app-desktop-en.png)
 
-## Run and deploy
+## [Run](<https://jtech-co.github.io/Retro-Video-Effector/>) and deploy
 
 Keep `index.html` beside `css/`, `js/`, and `assets/`. Publish the ZIP contents at the root of a GitHub Pages repository, retaining the empty `.nojekyll`. Every runtime reference is relative, including project-subpath deployment. No npm install, Node/Python application server, API key, or generated bundle is required. The Python/Node files are optional developer tests, not application prerequisites.
 
