@@ -1,0 +1,11 @@
+{
+  "product": "Retro Video Effector",
+  "version": "2.1.0",
+  "previousVersion": "2.0.0",
+  "engineBytesUnchanged": true,
+  "engineSha256": "d527ff012350be6d4065c32e65328e8a9a9d69346b5360d274cbe5684dd52a44",
+  "templateBytesUnchanged": true,
+  "parameterContractsUnchanged": true,
+  "presetsUnchanged": true,
+  "count": 30
+}

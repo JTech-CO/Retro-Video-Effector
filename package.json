@@ -1,0 +1,11 @@
+{
+  "name": "retro-video-effector",
+  "version": "2.1.0",
+  "private": true,
+  "description": "Build-free local image effects in an app-only Windows 95-style interface. English and Korean.",
+  "scripts": {
+    "test": "node --test tests/engine.test.cjs",
+    "test:browser": "python tests/browser.test.py",
+    "test:static": "python tests/static.test.py"
+  }
+}

@@ -1,0 +1,292 @@
+TAP version 13
+# Subtest: Exactly 30 controls: 25 numeric and 5 boolean
+ok 1 - Exactly 30 controls: 25 numeric and 5 boolean
+  ---
+  duration_ms: 0.978777
+  type: 'test'
+  ...
+# Subtest: All defaults are in range and normalized without changes
+ok 2 - All defaults are in range and normalized without changes
+  ---
+  duration_ms: 1.342314
+  type: 'test'
+  ...
+# Subtest: Invalid and hostile settings are bounded and unknown keys ignored
+ok 3 - Invalid and hostile settings are bounded and unknown keys ignored
+  ---
+  duration_ms: 0.326833
+  type: 'test'
+  ...
+# Subtest: Seeded processor is deterministic
+ok 4 - Seeded processor is deterministic
+  ---
+  duration_ms: 46.473442
+  type: 'test'
+  ...
+# Subtest: Changing the seed changes active artifacts
+ok 5 - Changing the seed changes active artifacts
+  ---
+  duration_ms: 23.531351
+  type: 'test'
+  ...
+# Subtest: Input buffer is never mutated
+ok 6 - Input buffer is never mutated
+  ---
+  duration_ms: 5.09462
+  type: 'test'
+  ...
+# Subtest: Output dimensions, RGBA length and alpha preserved by the kernel
+ok 7 - Output dimensions, RGBA length and alpha preserved by the kernel
+  ---
+  duration_ms: 0.569672
+  type: 'test'
+  ...
+# Subtest: Single-pixel and single-row/column images are finite and safe
+ok 8 - Single-pixel and single-row/column images are finite and safe
+  ---
+  duration_ms: 0.278551
+  type: 'test'
+  ...
+# Subtest: Reject malformed dimensions and buffers
+ok 9 - Reject malformed dimensions and buffers
+  ---
+  duration_ms: 0.468372
+  type: 'test'
+  ...
+# Subtest: Flat RGB remains stable in the neutral linear path (within 1 level)
+ok 10 - Flat RGB remains stable in the neutral linear path (within 1 level)
+  ---
+  duration_ms: 3.201432
+  type: 'test'
+  ...
+# Subtest: Disabled artifact pipeline is independent of the noise seed
+ok 11 - Disabled artifact pipeline is independent of the noise seed
+  ---
+  duration_ms: 24.454846
+  type: 'test'
+  ...
+# Subtest: Disabled ringing ignores amount and radius
+ok 12 - Disabled ringing ignores amount and radius
+  ---
+  duration_ms: 9.134342
+  type: 'test'
+  ...
+# Subtest: Disabled color cast ignores all channel gains
+ok 13 - Disabled color cast ignores all channel gains
+  ---
+  duration_ms: 9.969265
+  type: 'test'
+  ...
+# Subtest: Disabled scanlines ignore scanline weight
+ok 14 - Disabled scanlines ignore scanline weight
+  ---
+  duration_ms: 9.665207
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: tone_low
+ok 15 - Control changes pixels: tone_low
+  ---
+  duration_ms: 10.185305
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: tone_high
+ok 16 - Control changes pixels: tone_high
+  ---
+  duration_ms: 10.177714
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: apply_strong_ringing
+ok 17 - Control changes pixels: apply_strong_ringing
+  ---
+  duration_ms: 10.227388
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: sharpen_amount
+ok 18 - Control changes pixels: sharpen_amount
+  ---
+  duration_ms: 10.3783
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: sharpen_size
+ok 19 - Control changes pixels: sharpen_size
+  ---
+  duration_ms: 10.829406
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: apply_color_cast
+ok 20 - Control changes pixels: apply_color_cast
+  ---
+  duration_ms: 10.413112
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: cast_r
+ok 21 - Control changes pixels: cast_r
+  ---
+  duration_ms: 10.37809
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: cast_g
+ok 22 - Control changes pixels: cast_g
+  ---
+  duration_ms: 10.415495
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: cast_b
+ok 23 - Control changes pixels: cast_b
+  ---
+  duration_ms: 10.250481
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: cutoff_y
+ok 24 - Control changes pixels: cutoff_y
+  ---
+  duration_ms: 9.955856
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: cutoff_i
+ok 25 - Control changes pixels: cutoff_i
+  ---
+  duration_ms: 10.440963
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: cutoff_q
+ok 26 - Control changes pixels: cutoff_q
+  ---
+  duration_ms: 10.519419
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: chroma_crosstalk
+ok 27 - Control changes pixels: chroma_crosstalk
+  ---
+  duration_ms: 10.540079
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: chroma_shift_x
+ok 28 - Control changes pixels: chroma_shift_x
+  ---
+  duration_ms: 10.474442
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: noise_intensity_y
+ok 29 - Control changes pixels: noise_intensity_y
+  ---
+  duration_ms: 10.45919
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: noise_intensity_c
+ok 30 - Control changes pixels: noise_intensity_c
+  ---
+  duration_ms: 10.490746
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: jitter_freq
+ok 31 - Control changes pixels: jitter_freq
+  ---
+  duration_ms: 20.618716
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: jitter_amp
+ok 32 - Control changes pixels: jitter_amp
+  ---
+  duration_ms: 11.058366
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: classic_jitter
+ok 33 - Control changes pixels: classic_jitter
+  ---
+  duration_ms: 21.814013
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: jitter_roughness
+ok 34 - Control changes pixels: jitter_roughness
+  ---
+  duration_ms: 10.241387
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: head_switch_rows
+ok 35 - Control changes pixels: head_switch_rows
+  ---
+  duration_ms: 10.504086
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: head_switch_pull
+ok 36 - Control changes pixels: head_switch_pull
+  ---
+  duration_ms: 10.325071
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: head_switch_noise
+ok 37 - Control changes pixels: head_switch_noise
+  ---
+  duration_ms: 10.155561
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: dropout_count
+ok 38 - Control changes pixels: dropout_count
+  ---
+  duration_ms: 10.296399
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: dropout_max_len
+ok 39 - Control changes pixels: dropout_max_len
+  ---
+  duration_ms: 10.238553
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: dropout_noise_freq
+ok 40 - Control changes pixels: dropout_noise_freq
+  ---
+  duration_ms: 20.705034
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: apply_scanlines
+ok 41 - Control changes pixels: apply_scanlines
+  ---
+  duration_ms: 25.40517
+  type: 'test'
+  ...
+# Subtest: Control changes pixels: scanline_weight
+ok 42 - Control changes pixels: scanline_weight
+  ---
+  duration_ms: 19.084529
+  type: 'test'
+  ...
+# Subtest: All numeric extremes remain bounded
+ok 43 - All numeric extremes remain bounded
+  ---
+  duration_ms: 5.399732
+  type: 'test'
+  ...
+# Subtest: Previous release pixel parity: standard
+ok 44 - Previous release pixel parity: standard
+  ---
+  duration_ms: 5.861564
+  type: 'test'
+  ...
+# Subtest: Previous release pixel parity: soft
+ok 45 - Previous release pixel parity: soft
+  ---
+  duration_ms: 4.925811
+  type: 'test'
+  ...
+# Subtest: Previous release pixel parity: worn
+ok 46 - Previous release pixel parity: worn
+  ---
+  duration_ms: 5.099167
+  type: 'test'
+  ...
+# Subtest: Previous release pixel parity: crt
+ok 47 - Previous release pixel parity: crt
+  ---
+  duration_ms: 5.186326
+  type: 'test'
+  ...
+1..47
+# tests 47
+# suites 0
+# pass 47
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 586.464824

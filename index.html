@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<!-- ========================================================================
+     RETRO VIDEO EFFECTOR / APPLICATION EDITION 2.1
+     FILE    : INDEX.HTML
+     PURPOSE : STATIC ENTRY POINT. LOAD CSS AND JS FROM THE SAME DISK.
+     NOTE    : VINTAGE PRESENTATION. MODERN BROWSER REQUIRED.
+     ======================================================================== -->
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Retro Video Effector - Windows 95 스타일의 로컬 이미지 이펙터. AI, 업로드, 설치 없이 사진에 아날로그 테이프 효과를 적용합니다." data-meta="description" name="description"/>
+<meta content="#000080" name="theme-color"/>
+<meta content="light" name="color-scheme"/>
+<meta content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; worker-src blob:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'" http-equiv="Content-Security-Policy"/>
+<meta content="Retro Video Effector" property="og:title"/>
+<meta content="A local analog image editor. No AI, uploads, or desktop simulation." data-meta="description" property="og:description"/>
+<meta content="website" property="og:type"/>
+<title>Retro Video Effector</title>
+<link href="./assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="./css/windows95.css" rel="stylesheet"/>
+<link href="./css/app.css" rel="stylesheet"/>
+<script defer="" src="./js/parameters.js"></script>
+<script defer="" src="./js/strings.js"></script>
+<script defer="" src="./js/engine.js"></script>
+<script defer="" src="./js/processor.js"></script>
+<script defer="" src="./js/demo.js"></script>
+<script defer="" src="./js/app.js"></script>
+</head>
+<body data-state="empty">
+<svg aria-hidden="true" class="icon-library" xmlns="http://www.w3.org/2000/svg">
+<symbol id="i-tape" viewbox="0 0 32 32"><path d="M1 7h30v20H1z" fill="#222"></path><path d="M3 9h26v11H3z" fill="#c0c0c0"></path><path d="M4 10h24v9H4z" fill="#000080"></path><path d="M6 12h6v5H6zm14 0h6v5h-6z" fill="#fff"></path><path d="M8 13h2v3H8zm14 0h2v3h-2z" fill="#888"></path><path d="M12 13h8v3h-8zM9 22h14v3H9z" fill="#e0e0e0"></path><path d="M3 8h26v1H3z" fill="#fff"></path></symbol>
+<symbol id="i-open" viewbox="0 0 32 32"><path d="M2 8h11v3h17v17H2z" fill="#000"></path><path d="M3 9h9v3h16v3H3z" fill="#ffff80"></path><path d="M3 16h27l-4 11H3z" fill="#808000"></path><path d="M5 17h24l-4 9H2z" fill="#ffff00"></path><path d="M5 17h23v1H5z" fill="#fff"></path></symbol>
+<symbol id="i-save" viewbox="0 0 32 32"><path d="M3 2h24l3 3v25H3z" fill="#000"></path><path d="M4 3h22l3 3v23H4z" fill="#000080"></path><path d="M8 3h15v10H8z" fill="#c0c0c0"></path><path d="M18 4h3v7h-3z" fill="#000"></path><path d="M8 17h16v12H8z" fill="#fff"></path><path d="M10 20h12v1H10zm0 3h12v1H10zm0 3h9v1h-9z" fill="#808080"></path></symbol>
+<symbol id="i-compare" viewbox="0 0 32 32"><path d="M2 5h28v22H2z" fill="#000"></path><path d="M3 6h13v20H3z" fill="#fff"></path><path d="M17 6h12v20H17z" fill="#000080"></path><path d="M6 10h7v2H6zm0 5h7v2H6zm0 5h7v2H6z" fill="#808080"></path><path d="M20 10h6v2h-6zm0 5h6v2h-6zm0 5h6v2h-6z" fill="#00ffff"></path></symbol>
+<symbol id="i-reset" viewbox="0 0 32 32"><path d="M12 6h13v4H12v4H3V5h4v5h1V6zm13 4h4v14h-4zm-17 14h17v4H8z" fill="#000"></path><path d="M13 7h11v2H13zm13 4h2v12h-2zM9 25h15v2H9zM4 6h2v5h6v2H4z" fill="#000080"></path></symbol>
+<symbol id="i-test" viewbox="0 0 32 32"><path d="M1 3h30v24H1zM12 27h8v3h-8z" fill="#000"></path><path d="M2 4h28v22H2z" fill="#c0c0c0"></path><path d="M4 6h4v15H4z" fill="#fff"></path><path d="M8 6h4v15H8z" fill="#ffff00"></path><path d="M12 6h4v15h-4z" fill="#00ffff"></path><path d="M16 6h4v15h-4z" fill="#00ff00"></path><path d="M20 6h4v15h-4z" fill="#ff00ff"></path><path d="M24 6h4v15h-4z" fill="#ff0000"></path><path d="M4 21h24v2H4z" fill="#000080"></path></symbol>
+<symbol id="i-info" viewbox="0 0 32 32"><path d="M9 2h17v28H5V6z" fill="#000"></path><path d="M10 3h15v26H6V7h4z" fill="#fff"></path><path d="M14 7h4v4h-4zm0 7h4v9h-4z" fill="#000080"></path><path d="M7 6h2v1H7z" fill="#808080"></path></symbol>
+<symbol id="i-share" viewbox="0 0 32 32"><path d="M1 4h12v9H1zm18 0h12v9H19zM10 20h12v9H10zM6 14h2v3h17v-3h2v5H17v1h-2v-1H6z" fill="#000"></path><path d="M2 5h10v6H2zm18 0h10v6H20zm-9 16h10v6H11z" fill="#fff"></path><path d="M3 6h8v4H3zm18 0h8v4h-8zm-9 16h8v4h-8z" fill="#000080"></path></symbol>
+<symbol id="i-fit" viewbox="0 0 32 32"><path d="M2 2h9v2H4v7H2zm19 0h9v9h-2V4h-7zM2 21h2v7h7v2H2zm26 0h2v9h-9v-2h7zM8 8h16v16H8zm2 2v12h12V10z" fill="currentColor" fill-rule="evenodd"></path></symbol>
+<symbol id="i-dice" viewbox="0 0 32 32"><path d="M4 3h24v26H4z" fill="#000"></path><path d="M5 4h22v24H5z" fill="#fff"></path><path d="M8 7h4v4H8zm12 0h4v4h-4zm-6 7h4v4h-4zm-6 7h4v4H8zm12 0h4v4h-4z" fill="#000080"></path></symbol>
+<symbol id="i-close" viewbox="0 0 12 12"><path d="M2 1h2v2h1v1h2V3h1V1h2v3H9v1H8v2h1v1h1v3H8V9H7V8H5v1H4v2H2V8h1V7h1V5H3V4H2z" fill="currentColor"></path></symbol>
+</svg>
+<!-- 0100 / APPLICATION ONLY - NO DESKTOP OR WINDOW CONTROLS -->
+<main aria-label="Retro Video Effector" class="app-root" id="app-window">
+<header class="titlebar app-header">
+<div class="app-brand"><svg aria-hidden="true" class="icon"><use href="#i-tape"></use></svg><h1>Retro Video Effector</h1><span class="edition-label" data-i18n="stillEdition">정지 이미지 편집기</span></div>
+<div aria-label="표시 언어" class="language-picker" data-aria="language" role="group">
+<button aria-label="영어로 표시" aria-pressed="false" class="btn language-button" data-language="en" data-tip="english" id="lang-en" lang="en" title="영어로 표시" type="button">EN</button>
+<button aria-label="한국어로 표시" aria-pressed="true" class="btn language-button" data-language="ko" data-tip="korean" id="lang-kr" lang="ko" title="한국어로 표시" type="button">KR</button>
+</div></header>
+<nav aria-label="편집 도구" class="commandbar" data-aria="tools">
+<button aria-label="이미지 열기 (Ctrl/Command+O)" class="btn tool-btn" data-tip="open" id="btn-upload-trigger" title="이미지 열기 (Ctrl/Command+O)" type="button"><svg aria-hidden="true" class="icon"><use href="#i-open"></use></svg><span data-i18n="openShort">이미지 열기</span></button>
+<button aria-label="이미지 저장 (Ctrl/Command+S)" class="btn tool-btn" data-tip="export" disabled="" id="btn-export" title="이미지 저장 (Ctrl/Command+S)" type="button"><svg aria-hidden="true" class="icon"><use href="#i-save"></use></svg><span data-i18n="saveShort">이미지 저장</span></button>
+<button aria-label="이미지 공유" class="btn tool-btn" data-tip="share" disabled="" hidden="" id="btn-share" title="이미지 공유" type="button"><svg aria-hidden="true" class="icon"><use href="#i-share"></use></svg><span data-i18n="shareShort">PNG 공유</span></button>
+<span class="toolbar-divider"></span>
+<button aria-label="원본과 비교 (C)" aria-pressed="false" class="btn tool-btn" data-tip="compare" disabled="" id="btn-compare" title="원본과 비교 (C)" type="button"><svg aria-hidden="true" class="icon"><use href="#i-compare"></use></svg><span data-i18n="compareShort">원본 비교</span></button>
+<button aria-label="효과 초기화" class="btn tool-btn" data-tip="reset" id="btn-reset" title="효과 초기화" type="button"><svg aria-hidden="true" class="icon"><use href="#i-reset"></use></svg><span data-i18n="resetShort">효과 초기화</span></button>
+<button aria-label="진단용 테스트 패턴 열기" class="btn tool-btn" data-tip="demo" id="btn-demo" title="진단용 테스트 패턴 열기" type="button"><svg aria-hidden="true" class="icon"><use href="#i-test"></use></svg><span data-i18n="demoShort">테스트 패턴</span></button>
+<button aria-label="도움말" class="btn tool-btn" data-tip="helpShort" id="btn-info" title="도움말" type="button"><svg aria-hidden="true" class="icon"><use href="#i-info"></use></svg><span data-i18n="helpShort">도움말</span></button></nav>
+<!-- 0200 / MONITOR AND FIXED PROPERTY SHEET -->
+<div class="workbench" id="workspace">
+<section aria-label="이미지 미리보기" class="monitor-panel" data-aria="preview">
+<div class="pane-caption"><span class="channel-dot"></span><span data-i18n="monitorTitle">이미지 모니터</span></div>
+<div class="monitor-rim">
+<div class="monitor-header"><span data-i18n="processed" id="view-label">가공 이미지</span></div>
+<div aria-label="드래그로 이동 · 휠/핀치로 확대 · F 화면 맞춤" class="preview-viewport" data-tip="viewportHint" id="preview-viewport" tabindex="0" title="드래그로 이동 · 휠/핀치로 확대 · F 화면 맞춤">
+<div class="drop-zone" id="drop-zone">
+<div class="welcome-title"><svg aria-hidden="true" class="icon"><use href="#i-tape"></use></svg><span>RETRO VIDEO<br/>EFFECTOR</span></div>
+<p class="welcome-version" data-i18n="stillEdition">정지 이미지 편집기</p>
+<div class="welcome-rule"></div>
+<h2 data-i18n="dropTitle">이미지 파일을 열어 시작하세요.</h2>
+<p data-i18n="dropText">아래 작업 영역에 이미지를 끌어다 놓거나 붙여넣으세요.</p>
+<button class="btn default-button" id="btn-drop-upload" type="button"><svg aria-hidden="true" class="icon"><use href="#i-open"></use></svg><span data-i18n="choose">이미지 열기...</span></button>
+<p class="drop-formats">PNG / JPG / WEBP / AVIF / GIF / BMP</p>
+<p class="drop-note" data-i18n="dropPrivacy">이미지는 업로드되지 않습니다.</p>
+</div>
+<div class="canvas-container" hidden="" id="canvas-container"><canvas aria-label="가공 이미지" data-aria="outputImage" id="main-canvas"></canvas></div>
+<div hidden="" id="drop-shield"><svg aria-hidden="true" class="icon"><use href="#i-open"></use></svg><span data-i18n="replaceImage">새 이미지로 교체</span></div>
+<div class="render-status" hidden="" id="render-status" role="status"><span aria-hidden="true" class="busy-blocks"></span><span data-i18n="processing">픽셀 처리 중...</span></div>
+</div>
+</div>
+<div class="transportbar" hidden="" id="image-hud">
+<button aria-pressed="false" class="btn" data-i18n="original" disabled="" id="btn-original" type="button">원본 보기</button>
+<span class="transport-hint" data-i18n="previewKeys">F: 화면 맞춤 / C: 비교 / Space: 원본</span>
+<div aria-label="미리보기 이동" class="dpad-container" data-aria="pan" hidden="" id="dpad-container">
+<button class="btn" data-dir="left" type="button">&lt;</button><button class="btn" data-dir="up" type="button">^</button><button class="btn" data-dir="down" type="button">v</button><button class="btn" data-dir="right" type="button">&gt;</button>
+</div>
+</div>
+<div class="compare-bar" hidden="" id="compare-bar"><span data-i18n="originalShort">원본</span><input aria-label="비교 분할 위치" data-aria="comparePosition" disabled="" id="compare-slider" max="100" min="0" type="range" value="50"/><span data-i18n="processedShort">가공</span></div>
+<div class="zoom-controls">
+<button aria-label="화면에 맞추기 (F)" class="btn fit-button" data-tip="fit" disabled="" id="btn-fit" title="화면에 맞추기 (F)" type="button"><svg aria-hidden="true" class="icon"><use href="#i-fit"></use></svg><span data-i18n="fitShort">화면 맞춤</span></button>
+<button aria-label="축소" class="btn zoom-step" disabled="" id="btn-zoom-out" type="button">-</button>
+<input aria-label="확대 배율" data-aria="zoom" disabled="" id="zoom-slider" max="300" min="1" type="range" value="100"/>
+<button aria-label="확대" class="btn zoom-step" disabled="" id="btn-zoom-in" type="button">+</button><output id="zoom-value">100%</output>
+</div>
+</section>
+<aside aria-label="효과 속성" class="properties-panel" data-aria="propertiesTitle" id="control-panel" tabindex="-1">
+<div class="pane-caption"><svg aria-hidden="true" class="icon"><use href="#i-tape"></use></svg><h2 data-i18n="propertiesTitle">효과 속성</h2></div>
+<div class="recipe-section">
+<label data-i18n="preset" for="preset-select">프리셋</label>
+<select id="preset-select"><option data-i18n="presetStandard" value="standard">기본 VHS</option><option data-i18n="presetSoft" value="soft">은은한 테이프</option><option data-i18n="presetWorn" value="worn">여러 번 복사한 테이프</option><option data-i18n="presetCRT" value="crt">CRT 스캔라인</option><option data-i18n="presetCustom" disabled="" value="custom">사용자 설정</option></select>
+</div>
+<div aria-label="효과 분류" class="property-tabs" data-aria="effectGroups" id="property-tabs" role="tablist"></div>
+<div class="property-pages" id="panel-content"><div id="parameters-container"></div></div>
+<div class="job-settings">
+<fieldset><legend data-i18n="jobTitle">작업 설정</legend>
+<div class="seed-row"><label data-i18n="seed" for="seed-input">노이즈 시드</label><input id="seed-input" max="4294967295" min="0" step="1" type="number" value="1994"/><button aria-label="새 노이즈 시드" class="btn icon-btn" data-tip="reseed" id="btn-reseed" title="새 노이즈 시드" type="button"><svg aria-hidden="true" class="icon"><use href="#i-dice"></use></svg></button></div>
+<label data-i18n="resolution" for="resolution-select">출력 해상도</label><select id="resolution-select"><option data-i18n="resolutionNative" value="native">원본 비율 / 최대 2560px, 4MP</option><option data-i18n="resolution1440" value="1440">긴 변 최대 1440px</option><option data-i18n="resolution720" value="720">긴 변 최대 720px</option></select>
+</fieldset>
+<div class="settings-actions"><button class="btn" data-i18n="loadSettings" id="btn-settings-load" type="button">설정 열기...</button><button class="btn" data-i18n="saveSettings" id="btn-settings-save" type="button">설정 저장...</button></div>
+<p class="fine" data-i18n="panelNote">변경 즉시 자동 적용됩니다. ? 버튼을 누르면 항목별 설명이 표시됩니다.</p>
+</div>
+</aside>
+</div>
+<!-- 0300 / STATUS REGISTERS -->
+<footer class="statusbar"><span class="status-cell file-cell" data-i18n="noImage" id="file-name">이미지 없음</span><span class="status-cell" id="file-dimensions">-</span><span class="status-cell performance-cell" data-i18n="readyStatus" id="performance-label">준비됨</span></footer>
+</main>
+<!-- 0400 / LOCAL FILE HANDLES AND DIALOG BOXES -->
+<input accept="image/png,image/jpeg,image/webp,image/avif,image/gif,image/bmp" aria-label="이미지 열기 (Ctrl/Command+O)" data-aria="open" hidden="" id="file-upload" type="file"/>
+<input accept="application/json,.json" aria-label="설정 열기..." data-aria="loadSettings" hidden="" id="settings-upload" type="file"/>
+<div class="help-balloon" hidden="" id="info-popup" role="tooltip"></div>
+<div aria-live="polite" class="notification" hidden="" id="toast" role="status"></div>
+<dialog aria-labelledby="export-title" class="window dialog-window" id="export-dialog">
+<header class="titlebar"><h2 data-i18n="saveImage" id="export-title">이미지 저장</h2><button aria-label="닫기" class="titlebar-btn" data-close="export-dialog" data-tip="close" title="닫기" type="button"><svg aria-hidden="true" class="icon"><use href="#i-close"></use></svg></button></header>
+<div class="dialog-content"><div class="save-heading"><svg aria-hidden="true" class="icon"><use href="#i-save"></use></svg><div><strong data-i18n="saveImage">이미지 저장</strong><p id="export-size"></p></div></div>
+<fieldset><legend data-i18n="format">파일 형식</legend><select aria-label="파일 형식" data-aria="format" id="export-format"><option data-i18n="pngFormat" value="image/png">PNG / 무손실</option><option data-i18n="jpegFormat" value="image/jpeg">JPEG / 압축</option></select><div hidden="" id="export-quality-group"><label for="export-quality"><span data-i18n="exportQuality">저장 품질</span><output id="export-quality-value">95</output></label><input aria-label="저장 품질" data-aria="exportQuality" id="export-quality" max="100" min="10" type="range" value="95"/></div></fieldset>
+<p class="dialog-note" data-i18n="exportNote">비교선이나 화면 UI는 저장되지 않습니다. 현재 가공된 이미지 전체를 저장합니다.</p>
+<div class="dialog-actions"><button class="btn default-button" data-i18n="download" id="btn-download" type="button">파일 저장</button><button class="btn" data-close="export-dialog" data-i18n="cancel" type="button">취소</button></div></div>
+</dialog>
+<dialog aria-labelledby="about-heading" class="window dialog-window info-window" id="info-dialog">
+<header class="titlebar"><h2 data-i18n="aboutHeading" id="about-heading">도움말 / Retro Video Effector</h2><button aria-label="닫기" class="titlebar-btn" data-close="info-dialog" data-tip="close" title="닫기" type="button"><svg aria-hidden="true" class="icon"><use href="#i-close"></use></svg></button></header>
+<div class="dialog-content"><div class="about-brand"><svg aria-hidden="true" class="icon"><use href="#i-tape"></use></svg><div><strong>Retro Video Effector</strong><p>VERSION 2.1.0</p></div></div>
+<div class="readme-pane"><section><h3 data-i18n="privacyTitle">01 / 브라우저 내부 처리</h3><p data-i18n="privacyText">Canvas와 JavaScript Web Worker로 이미지를 가공합니다. AI 모델, 외부 API, 이미지 업로드, 분석 스크립트, 원격 폰트를 사용하지 않습니다. 브라우저 저장소에는 언어 선택만 기록합니다. 이미지 공유 버튼은 파일 공유를 지원하는 환경에서만 표시하며, 사용자가 누를 때만 운영체제의 공유 기능을 호출합니다.</p></section><section><h3 data-i18n="aboutTitle">02 / 프로그램 정보</h3><p data-i18n="aboutText">Retro Video Effector는 사진에 아날로그 영상 신호의 열화를 적용하는 정지 이미지 편집기입니다. Windows 95의 남색 제목줄과 입체 테두리만 사용하고 바탕 화면이나 운영체제 창은 모방하지 않습니다. 소스 주석은 C/BASIC풍이며, 실행에는 현대 브라우저가 필요합니다.</p></section><section><h3 data-i18n="limitsTitle">03 / 지원 범위</h3><p data-i18n="limitsText">정지 이미지용입니다. 애니메이션은 정지 프레임으로 처리하며 움직임을 보존하지 않습니다. 투명 영역은 검정 배경에 합성합니다. 파일 최대 40MiB, 입력 최대 40MP, 출력 긴 변 최대 2560px 및 4MP입니다. HEIC·SVG·동영상은 지원하지 않습니다.</p></section><section><h3 data-i18n="keysTitle">04 / 단축키</h3><p data-i18n="keysText">Ctrl/Command+O: 이미지 열기 / Ctrl/Command+S: 이미지 저장 / F: 화면 맞춤 / C: 비교 / Space 누름: 원본 / F1: 도움말 / Esc: 도움말·대화상자 닫기. 효과 탭은 방향키, Home, End로 이동할 수 있습니다.</p></section></div>
+<div class="dialog-actions"><span class="fine" data-i18n="local">브라우저 내부 처리 / AI 없음</span><button class="btn default-button" data-close="info-dialog" data-i18n="ok" type="button">확인</button></div></div>
+</dialog>
+<noscript><div class="noscript">Retro Video Effector requires JavaScript. 로컬 이미지 처리를 위해 JavaScript를 활성화하세요.</div></noscript>
+</body>
+</html>

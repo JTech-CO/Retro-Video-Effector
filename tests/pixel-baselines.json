@@ -1,0 +1,30 @@
+[
+  {
+    "preset": "standard",
+    "seed": 1994,
+    "width": 320,
+    "height": 180,
+    "sha256": "0e3861e6ce9d373b246397b3277fd965b6d70059f643d046b6ee59cf4761a9bd"
+  },
+  {
+    "preset": "soft",
+    "seed": 1994,
+    "width": 320,
+    "height": 180,
+    "sha256": "265943f623338f67a774f0abd8d0f0e908dd978a36cd7343bb209ba8f748fba8"
+  },
+  {
+    "preset": "worn",
+    "seed": 1994,
+    "width": 320,
+    "height": 180,
+    "sha256": "a7422b1df91338e90ceeb7ef2855de0f6728aa8d8ac2b4fafa286370d526d838"
+  },
+  {
+    "preset": "crt",
+    "seed": 1994,
+    "width": 320,
+    "height": 180,
+    "sha256": "400ae4a0ef07aff959768b55e15221505a0dd1fdcd04c1cbd777199158c41aef"
+  }
+]

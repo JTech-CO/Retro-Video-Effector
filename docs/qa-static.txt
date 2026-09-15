@@ -1,0 +1,32 @@
+test_01_root_entry_and_nojekyll (__main__.StaticRelease.test_01_root_entry_and_nojekyll) ... ok
+test_02_css_and_js_are_separate_folders (__main__.StaticRelease.test_02_css_and_js_are_separate_folders) ... ok
+test_03_asset_references_are_relative_and_exist (__main__.StaticRelease.test_03_asset_references_are_relative_and_exist) ... ok
+test_04_no_duplicate_dom_ids (__main__.StaticRelease.test_04_no_duplicate_dom_ids) ... ok
+test_05_external_classic_scripts_in_dependency_order (__main__.StaticRelease.test_05_external_classic_scripts_in_dependency_order) ... ok
+test_06_no_inline_javascript_or_event_handlers (__main__.StaticRelease.test_06_no_inline_javascript_or_event_handlers) ... ok
+test_07_strict_runtime_csp (__main__.StaticRelease.test_07_strict_runtime_csp) ... ok
+test_08_no_runtime_network_endpoints (__main__.StaticRelease.test_08_no_runtime_network_endpoints) ... ok
+test_09_no_eval_document_write_or_activex (__main__.StaticRelease.test_09_no_eval_document_write_or_activex) ... ok
+test_10_no_external_css_fonts_or_imports (__main__.StaticRelease.test_10_no_external_css_fonts_or_imports) ... ok
+test_11_no_font_binaries (__main__.StaticRelease.test_11_no_font_binaries) ... ok
+test_12_no_former_brand_in_runtime (__main__.StaticRelease.test_12_no_former_brand_in_runtime) ... ok
+test_13_no_legacy_drawer_selectors (__main__.StaticRelease.test_13_no_legacy_drawer_selectors) ... ok
+test_14_vintage_source_headers (__main__.StaticRelease.test_14_vintage_source_headers) ... ok
+test_15_brand_schema_export_and_namespace (__main__.StaticRelease.test_15_brand_schema_export_and_namespace) ... ok
+test_16_no_build_required (__main__.StaticRelease.test_16_no_build_required) ... ok
+test_17_readme_links_resolve (__main__.StaticRelease.test_17_readme_links_resolve) ... ok
+test_18_template_colors_retained (__main__.StaticRelease.test_18_template_colors_retained) ... ok
+test_19_all_local_menu_targets_exist (__main__.StaticRelease.test_19_all_local_menu_targets_exist) ... ok
+test_20_package_identity (__main__.StaticRelease.test_20_package_identity) ... ok
+test_21_no_simulated_desktop_in_entry (__main__.StaticRelease.test_21_no_simulated_desktop_in_entry) ... ok
+test_22_no_placeholder_anchors (__main__.StaticRelease.test_22_no_placeholder_anchors) ... ok
+test_23_direct_language_buttons (__main__.StaticRelease.test_23_direct_language_buttons) ... ok
+test_24_unicode_files_are_clean (__main__.StaticRelease.test_24_unicode_files_are_clean) ... ok
+test_25_no_tiny_type_in_application_overrides (__main__.StaticRelease.test_25_no_tiny_type_in_application_overrides) ... ok
+test_26_old_ui_event_targets_removed (__main__.StaticRelease.test_26_old_ui_event_targets_removed) ... ok
+test_27_explicit_button_types (__main__.StaticRelease.test_27_explicit_button_types) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.011s
+
+OK

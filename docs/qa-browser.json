@@ -1,0 +1,879 @@
+{
+  "version": "2.1.0",
+  "results": [
+    {
+      "name": "Static HTTP: all runtime resources load under a repository subpath",
+      "pass": true,
+      "detail": [
+        {
+          "path": "index.html",
+          "status": 200,
+          "identical": true,
+          "mime": "text/html"
+        },
+        {
+          "path": ".nojekyll",
+          "status": 200,
+          "identical": true,
+          "mime": "application/octet-stream"
+        },
+        {
+          "path": "assets/favicon.svg",
+          "status": 200,
+          "identical": true,
+          "mime": "image/svg+xml"
+        },
+        {
+          "path": "css/windows95.css",
+          "status": 200,
+          "identical": true,
+          "mime": "text/css"
+        },
+        {
+          "path": "css/app.css",
+          "status": 200,
+          "identical": true,
+          "mime": "text/css"
+        },
+        {
+          "path": "js/parameters.js",
+          "status": 200,
+          "identical": true,
+          "mime": "text/javascript"
+        },
+        {
+          "path": "js/strings.js",
+          "status": 200,
+          "identical": true,
+          "mime": "text/javascript"
+        },
+        {
+          "path": "js/engine.js",
+          "status": 200,
+          "identical": true,
+          "mime": "text/javascript"
+        },
+        {
+          "path": "js/processor.js",
+          "status": 200,
+          "identical": true,
+          "mime": "text/javascript"
+        },
+        {
+          "path": "js/demo.js",
+          "status": 200,
+          "identical": true,
+          "mime": "text/javascript"
+        },
+        {
+          "path": "js/app.js",
+          "status": 200,
+          "identical": true,
+          "mime": "text/javascript"
+        }
+      ]
+    },
+    {
+      "name": "App-only root fills the viewport without desktop/frame/taskbar controls",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Windows 95 navy and silver remain within the app",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Exactly 30 effect controls and four fixed tabs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Empty image-only actions disabled, not clickable no-ops",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Unavailable native file sharing is hidden",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No placeholder hyperlinks or duplicate OS menus",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Image picker really opens: #btn-upload-trigger",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Image picker really opens: #btn-drop-upload",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Settings picker really opens",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Test pattern produces real pixels through a Blob Worker",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Preview and properties do not overlap on desktop",
+      "pass": true,
+      "detail": [
+        {
+          "left": 21,
+          "right": 958.609375,
+          "top": 214,
+          "bottom": 835.90625
+        },
+        {
+          "left": 979.609375,
+          "right": 1426,
+          "top": 137,
+          "bottom": 943
+        }
+      ]
+    },
+    {
+      "name": "EN selects English immediately and sets aria-pressed state",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Language change preserves parameters, pixels, zoom, and selected tab",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "EN labels and export choices are translated",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "KR selects Korean directly, not a three-language cycle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Both dictionaries have complete matching keys",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Every declarative text/ARIA/tooltip/meta key exists in both languages",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "All 30 effect labels and help texts available in English and Korean",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Korean label renders with an installed font and real glyphs",
+      "pass": true,
+      "detail": [
+        {
+          "familyName": "Noto Sans CJK KR",
+          "postScriptName": "NotoSansCJKkr-Regular",
+          "isCustomFont": false,
+          "glyphCount": 6
+        }
+      ]
+    },
+    {
+      "name": "UTF-8 UI text has no replacement characters",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Visible editor text is at least 14px on desktop",
+      "pass": true,
+      "detail": {
+        "minimum": 14
+      }
+    },
+    {
+      "name": "Arrow/Home tab navigation is functional",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: apply_jpeg",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: apply_jpeg",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: jpeg_quality",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: jpeg_quality",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: tone_low",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: tone_low",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: tone_high",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: tone_high",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: apply_strong_ringing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: apply_strong_ringing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: sharpen_amount",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: sharpen_amount",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: sharpen_size",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: sharpen_size",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: apply_color_cast",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: apply_color_cast",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: cast_r",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: cast_r",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: cast_g",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: cast_g",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: cast_b",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: cast_b",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: cutoff_y",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: cutoff_y",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: cutoff_i",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: cutoff_i",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: cutoff_q",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: cutoff_q",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: chroma_crosstalk",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: chroma_crosstalk",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: chroma_shift_x",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: chroma_shift_x",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: noise_intensity_y",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: noise_intensity_y",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: noise_intensity_c",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: noise_intensity_c",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: jitter_freq",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: jitter_freq",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: jitter_amp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: jitter_amp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: classic_jitter",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: classic_jitter",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: jitter_roughness",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: jitter_roughness",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: head_switch_rows",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: head_switch_rows",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: head_switch_pull",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: head_switch_pull",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: head_switch_noise",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: head_switch_noise",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: dropout_count",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: dropout_count",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: dropout_max_len",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: dropout_max_len",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: dropout_noise_freq",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: dropout_noise_freq",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: apply_scanlines",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: apply_scanlines",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Effect input: scanline_weight",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Context help: scanline_weight",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Reset restores all effect values and seed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A visible status message also translates when language changes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Disabled parent disables dependent JPEG input",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Escape closes contextual help",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Unicode filename remains intact after EN/KR switching",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Preset applies a complete parameter record: standard",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Preset applies a complete parameter record: soft",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Preset applies a complete parameter record: worn",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Preset applies a complete parameter record: crt",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Numeric noise seed sets deterministic state",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "New-noise button changes seed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PNG download is an actual file with Unicode name and source dimensions",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Split comparison changes state and pixels",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Original button is a real pressed toggle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Saved image never includes compare divider or original-view override",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "JPEG download really decodes as JPEG",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Export quality slider is wired and JPEG-only",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Cancel closes export dialog",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Export close button closes its actual dialog",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Rapid slider updates commit the latest value only",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Save waits for the latest requested filter result",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Settings export downloads usable JSON",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Settings import restores exported effect values",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Version-1 settings remain readable",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Bad settings show error without losing existing image",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Unsupported input is rejected without breaking the editor",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Zoom in/out/fit work",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Zoom range sets actual scale",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F restores fitted view",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "C toggles comparison",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Space shows and releases original view",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Ctrl+O opens native file picker",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Ctrl+S opens actual export dialog",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Help button opens real help content",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Help close button works",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Help OK button works",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F1 opens help",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Escape closes real modal",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "720px resolution selection resizes output",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440px resolution selection never upscales input",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Responsive 1920px: no horizontal overflow, drawers, or tiny type",
+      "pass": true,
+      "detail": {
+        "scroll": 1920,
+        "inner": 1920,
+        "position": "static",
+        "transform": "none",
+        "minimum": 14
+      }
+    },
+    {
+      "name": "Responsive 1440px: no horizontal overflow, drawers, or tiny type",
+      "pass": true,
+      "detail": {
+        "scroll": 1440,
+        "inner": 1440,
+        "position": "static",
+        "transform": "none",
+        "minimum": 14
+      }
+    },
+    {
+      "name": "Responsive 1024px: no horizontal overflow, drawers, or tiny type",
+      "pass": true,
+      "detail": {
+        "scroll": 1024,
+        "inner": 1024,
+        "position": "static",
+        "transform": "none",
+        "minimum": 14
+      }
+    },
+    {
+      "name": "Responsive 920px: no horizontal overflow, drawers, or tiny type",
+      "pass": true,
+      "detail": {
+        "scroll": 920,
+        "inner": 920,
+        "position": "static",
+        "transform": "none",
+        "minimum": 14
+      }
+    },
+    {
+      "name": "Responsive 768px: no horizontal overflow, drawers, or tiny type",
+      "pass": true,
+      "detail": {
+        "scroll": 768,
+        "inner": 768,
+        "position": "static",
+        "transform": "none",
+        "minimum": 14
+      }
+    },
+    {
+      "name": "Responsive 390px: no horizontal overflow, drawers, or tiny type",
+      "pass": true,
+      "detail": {
+        "scroll": 390,
+        "inner": 390,
+        "position": "static",
+        "transform": "none",
+        "minimum": 14
+      }
+    },
+    {
+      "name": "Responsive 320px: no horizontal overflow, drawers, or tiny type",
+      "pass": true,
+      "detail": {
+        "scroll": 320,
+        "inner": 320,
+        "position": "static",
+        "transform": "none",
+        "minimum": 14
+      }
+    },
+    {
+      "name": "Bottom tape controls remain reachable on mobile",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Pan button works: left",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Pan button works: right",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Pan button works: up",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Pan button works: down",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Stored-language startup logic (injected storage unit check)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Language storage write (injected storage unit check)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Language switching still works when storage is denied",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Real main-thread processing fallback still works",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Supported file-share branch sends a real PNG File (mock OS receiver)",
+      "pass": true,
+      "detail": {
+        "type": "image/png",
+        "size": 169572,
+        "name": "sample-frame-retro.png"
+      }
+    },
+    {
+      "name": "Local paste event decodes and processes its image",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Local drop event decodes and processes its image",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No application JavaScript exceptions",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "No image uploads or third-party runtime requests",
+      "pass": true,
+      "detail": [
+        {
+          "url": "blob:null/a6ddc205-b499-4cc1-956b-9230a43d12ee",
+          "method": "GET"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "navigation": {
+    "file": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/rve_v21/index.html",
+    "http": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at http://127.0.0.1:42221/rve_v21/"
+  },
+  "notes": [
+    "OS share destination was mocked; no claim of native share-sheet delivery. Paste/drop input events were synthetic; actual image decode and processing executed.",
+    "HTTP/file navigation was blocked by the browser administrator. UI, fonts, Canvas, Blob Worker, actual downloads and JSON ran in an in-memory test copy. Static HTTP bytes were independently checked. Native storage persistence across navigation and final GitHub Pages deployment were not tested.",
+    "Only Chromium and simulated viewport sizes were tested; not Safari/Firefox or physical mobile devices. No font files are distributed."
+  ],
+  "browser_mode": "in-memory; test-only inline-script CSP",
+  "browser_version": "144.0.7559.96",
+  "passed": 144,
+  "failed": 0
+}
