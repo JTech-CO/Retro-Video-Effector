@@ -2,7 +2,7 @@
 
 **Application edition 2.1.0** · [한국어](README-KR.md)
 
-An app-only, Windows 95-style **still-image editor**. The editor fills the page: there is no simulated desktop, Start button, taskbar, clock, or minimize/maximize/close-session controls. Navy and silver beveled controls remain. Image processing is local, with no runtime AI, upload, remote fonts, backend, or build step.
+An app-only, Windows 95-style **still-image editor**. Image processing is local, with no runtime AI, upload, remote fonts, backend, or build step.
 
 ![English application](assets/app-desktop-en.png)
 
